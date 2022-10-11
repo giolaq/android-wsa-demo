@@ -9,6 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.NavigationRail
 import androidx.compose.material.Surface
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Hardware
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.ListAlt
 import androidx.compose.runtime.Composable
@@ -22,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import com.amazon.appstore.aadevs.R
 import com.amazon.appstore.aadevs.ui.AADevsDestinations
 import com.amazon.appstore.aadevs.ui.theme.AADevsTheme
+import com.amazon.appstore.aadevs.utils.FeaturesChecker
 
 @Composable
 fun AADevsNavRail(
@@ -50,6 +52,7 @@ fun AppNavRail(
     currentRoute: String,
     navigateToHome: () -> Unit,
     navigateToContactUs: () -> Unit,
+    navigateToFeaturesChecker: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     AADevsNavRail(
@@ -70,6 +73,13 @@ fun AppNavRail(
             contentDescription = stringResource(id = R.string.cd_navigate_notifications),
             isSelected = currentRoute == AADevsDestinations.NOTIFICATIONS_TEST_ROUTE,
             action = navigateToContactUs
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        NavRailIcon(
+            icon = Icons.Filled.Hardware,
+            contentDescription = stringResource(id = R.string.cd_navigate_features_checker),
+            isSelected = currentRoute == AADevsDestinations.FEATURES_CHECKER_ROUTE,
+            action = navigateToFeaturesChecker
         )
     }
 }
@@ -116,6 +126,7 @@ fun PreviewAppNavRail() {
             currentRoute = AADevsDestinations.HOME_ROUTE,
             navigateToHome = {},
             navigateToContactUs = {},
+            navigateToFeaturesChecker = {}
         )
     }
 }

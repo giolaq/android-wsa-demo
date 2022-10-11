@@ -8,6 +8,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.amazon.appstore.aadevs.AppContainer
+import com.amazon.appstore.aadevs.ui.featureschecker.FeaturesCheckerRoute
+import com.amazon.appstore.aadevs.ui.featureschecker.FeaturesCheckerViewModel
 import com.amazon.appstore.aadevs.ui.notifications.NotificationsTestRoute
 import com.amazon.appstore.aadevs.ui.notifications.NotificationsTestViewModel
 import com.amazon.appstore.aadevs.ui.home.HomeRoute
@@ -43,6 +45,16 @@ fun AADevsNavGraph(
             )
             NotificationsTestRoute(
                 notificationsTestViewModel = notificationsTestViewModel,
+                isExpandedScreen = isExpandedScreen,
+                openDrawer = openDrawer
+            )
+        }
+        composable(AADevsDestinations.FEATURES_CHECKER_ROUTE) {
+            val featuresCheckerViewModel: FeaturesCheckerViewModel = viewModel(
+                factory = FeaturesCheckerViewModel.provideFactory(appContainer.featuresChecker)
+            )
+            FeaturesCheckerRoute(
+                featuresCheckerViewModel = featuresCheckerViewModel,
                 isExpandedScreen = isExpandedScreen,
                 openDrawer = openDrawer
             )

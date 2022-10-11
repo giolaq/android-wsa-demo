@@ -4,6 +4,7 @@
     <string name="cd_navigate_up">Navigate up</string>
     <string name="cd_navigate_home">Navigate to the home screen</string>
     <string name="cd_navigate_notifications">Navigate to the notification test</string>
+    <string name="cd_navigate_features_checker">Navigate to the features checker</string>
 
     <string name="cd_share">Share</string>
     <string name="cd_search">Search</string>
@@ -11,6 +12,7 @@
     <string name="cd_open_navigation_drawer">Open navigation drawer</string>
     <string name="home_title">Home</string>
     <string name="contactus_title">Contact Us</string>
+    <string name="features_checker_title">Features Checker</string>
 
     <string name="video_share">Share video</string>
 
@@ -20,6 +22,7 @@
 
     <string name="retry">Retry</string>
     <string name="notifications_test">Notifications Test</string>
+    <string name="features_checker">Features Checker</string>
 
 
     <string name="notification_channel_id" translatable="false">default_channel</string>
