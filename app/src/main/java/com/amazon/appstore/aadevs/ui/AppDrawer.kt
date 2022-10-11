@@ -4,6 +4,7 @@ import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Hardware
 import androidx.compose.material.icons.filled.ListAlt
 import androidx.compose.material.icons.filled.Message
 import androidx.compose.runtime.Composable
@@ -24,6 +25,7 @@ fun AppDrawer(
     currentRoute: String,
     navigateToHome: () -> Unit,
     navigateToContactUs: () -> Unit,
+    navigateToFeaturesChecker: () -> Unit,
     closeDrawer: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -46,6 +48,16 @@ fun AppDrawer(
             isSelected = currentRoute == AADevsDestinations.NOTIFICATIONS_TEST_ROUTE,
             action = {
                 navigateToContactUs()
+                closeDrawer()
+            }
+        )
+
+        DrawerButton(
+            icon = Icons.Filled.Hardware,
+            label = stringResource(id = R.string.features_checker_title),
+            isSelected = currentRoute == AADevsDestinations.FEATURES_CHECKER_ROUTE,
+            action = {
+                navigateToFeaturesChecker()
                 closeDrawer()
             }
         )
@@ -125,6 +137,7 @@ fun PreviewAppDrawer() {
                 currentRoute = AADevsDestinations.HOME_ROUTE,
                 navigateToHome = {},
                 navigateToContactUs = {},
+                navigateToFeaturesChecker = {},
                 closeDrawer = { }
             )
         }

@@ -67,6 +67,7 @@ fun AADevsApp(
                     currentRoute = currentRoute,
                     navigateToHome = navigationActions.navigateToHome,
                     navigateToContactUs = navigationActions.navigateToContactUs,
+                    navigateToFeaturesChecker = navigationActions.navigateToFeaturesChecker,
                     closeDrawer = { coroutineScope.launch { sizeAwareDrawerState.close() } },
                     modifier = Modifier
                         .statusBarsPadding()
@@ -91,6 +92,7 @@ fun AADevsApp(
                         currentRoute = currentRoute,
                         navigateToHome = navigationActions.navigateToHome,
                         navigateToContactUs = navigationActions.navigateToContactUs,
+                        navigateToFeaturesChecker = navigationActions.navigateToFeaturesChecker
                     )
                 }
                 AADevsNavGraph(
