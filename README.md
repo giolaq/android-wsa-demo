@@ -1,4 +1,4 @@
-AADevs aka Amazon Appstore Devs
+WSA Android Demo
 =============================
 
 <img src="https://github.com/giolaq/AADevs/blob/main/gifs/aadevsui.gif" width="640" height="336" />
