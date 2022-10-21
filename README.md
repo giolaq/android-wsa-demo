@@ -30,7 +30,7 @@ Key features include showing how to:
 
 ```
 
-youtube_key="Your Browser API Key"
+google_cloud_api_key="Your Google Cloud API Key"
 
 ```
 

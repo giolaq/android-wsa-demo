@@ -20,7 +20,7 @@ class YoutubeVideosRepository : VideosRepository {
                 channelID = channelID,
                 maxResult = 20,
                 orderType = Parser.ORDER_DATE,
-                key = youtube_key
+                key = gcloud_api_key
             )
             try {
                 val result = parser.getVideos(requestUrl)
@@ -33,6 +33,6 @@ class YoutubeVideosRepository : VideosRepository {
     }
 
     companion object {
-        const val youtube_key = BuildConfig.YOUTUBE_KEY
+        const val gcloud_api_key = BuildConfig.GCLOUD_API_KEY
     }
 }
