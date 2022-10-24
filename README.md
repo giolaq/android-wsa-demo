@@ -9,7 +9,7 @@ This project is a sample Android App to showcase best practices when optimizing 
 
 ## Prerequisites
 
-To run at best the app in this project you will need:
+To run this project, you will need the following:
 - Windows 11
 - Windows Subsystem for Android™️ (WSA) installed
 
