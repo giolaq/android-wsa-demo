@@ -17,7 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "GCLOUD_API_KEY", localProperties['google_cloud_api_key']
+        buildConfigField "String", "GOOGLE_CLOUD_API_KEY", localProperties['google_cloud_api_key']
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
