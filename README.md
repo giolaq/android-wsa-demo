@@ -7,6 +7,15 @@ _Learn how to launch an app for the Windows Subsystem for Android™️_
 
 This project is a sample Android App to showcase best practices when optimizing for [Windows Subsystem for Android](https://learn.microsoft.com/en-us/windows/android/wsa/).
 
+## Prerequisites
+
+To run this project, you will need the following:
+- Windows 11
+- Windows Subsystem for Android™️ (WSA) installed
+
+To set up your development environment with WSA you can follow the instructions here:
+
+[WSA Development Environment Setup](https://learn.microsoft.com/en-us/windows/android/wsa/#set-up-your-development-environment)
 
 ## ✅ Features
 
@@ -30,11 +39,19 @@ Key features include showing how to:
 
 ```
 
-youtube_key="Your Browser API Key"
+google_cloud_api_key="Your Google Cloud API Key"
 
 ```
 
-4. Open this project with Android Studio and run the app on Windows 11 connecting the WSA to Android Studio. For more info you can follow the instructions here:
+4. Open this project with Android Studio
+5. Start WSA opening the Amazon Appstore
+6. Connect WSA with Android Studio executing the following command in a terminal:
+```
+   adb connect 127.0.0.1:58526
+```
+6. Run the app
+
+For more info about how to test your Android app with WSA you can follow the instructions here:
 
 [![Video screenshot for Testing your App on Windows 11](https://img.youtube.com/vi/z_ehadkRyzY/0.jpg)](https://www.youtube.com/watch?v=z_ehadkRyzY)
 
