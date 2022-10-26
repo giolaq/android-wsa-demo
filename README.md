@@ -32,7 +32,7 @@ Key features include showing how to:
 
 1. Clone the following repository:
 
-`git clone git@github.com:giolaq/AADevs.git`
+`git clone git@github.com:giolaq/android-wsa-demo.git`
 
 1. Create a [Google Cloud API key](https://cloud.google.com/docs/authentication/api-keys?hl=en&visit_id=638007358010576297-2547601963&rd=1#creating-browser-api-keys) for the YoutubeParser feed retrieval
 2. Put your Browser API Key in your local.properties file in the root of your project
